@@ -107,6 +107,9 @@ hr {
   height: 0;
   overflow: visible;
 }
+section.u-backlink.u-clearfix.u-grey-80 {
+    display: none !important;
+}
 button,
 input,
 optgroup,
