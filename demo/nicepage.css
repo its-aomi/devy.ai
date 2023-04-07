@@ -41542,6 +41542,10 @@ a.u-link.u-text-hover-grey-90:hover {
     width: auto;
   }
 
+  .u-header .u-nav-2 {
+    letter-spacing: normal;
+  }
+
   .u-header .u-image-1 {
     width: 227px;
     height: 61px;
