@@ -31,7 +31,7 @@
 .u-section-1 .u-btn-1 {
   font-size: 1.5rem;
   background-image: none;
-  margin: 42px auto 0 461px;
+  margin: 42px auto 0 459px;
   padding: 12px 28px 12px 27px;
 }
 
@@ -1237,7 +1237,7 @@
   }
 
   .u-section-5 .u-layout-cell-2 {
-    min-height: 300px;
+    min-height: 100px;
   }
 
   .u-section-5 .u-text-1 {
@@ -1254,7 +1254,7 @@
 
 @media (max-width: 767px) {
   .u-section-5 .u-layout-cell-2 {
-    min-height: 225px;
+    min-height: 75px;
   }
 
   .u-section-5 .u-text-2 {
@@ -1273,7 +1273,7 @@
   }
 
   .u-section-5 .u-layout-cell-2 {
-    min-height: 142px;
+    min-height: 47px;
   }
 
   .u-section-5 .u-text-1 {
