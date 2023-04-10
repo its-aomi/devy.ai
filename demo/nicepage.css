@@ -41614,9 +41614,20 @@ a.u-link.u-text-hover-grey-90:hover {
   margin: 18px auto 0;
 }
 
+.u-footer .u-btn-1 {
+  background-image: none;
+  padding: 0;
+}
+
 .u-footer .u-text-5 {
+  background-image: none;
   font-size: 1.25rem;
   margin: -32px 149px 0 784px;
+}
+
+.u-footer .u-btn-2 {
+  background-image: none;
+  padding: 0;
 }
 
 .u-footer .u-text-6 {
