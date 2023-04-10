@@ -22,6 +22,27 @@
 		"name": "Site1",
 		"logo": "images/devylogo3.20.23.png"
 }</script>
+<script type="module">
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+  
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => alert("Thank you for your submission"))
+    .catch((error) => alert(error));
+};
+
+document
+  .querySelector("form")
+  .addEventListener("submit", handleSubmit);
+
+</script>
     <meta name="theme-color" content="#6d71e5">
     <meta property="og:title" content="contact us">
     <meta property="og:type" content="website">
