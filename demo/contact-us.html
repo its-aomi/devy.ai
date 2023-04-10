@@ -23,28 +23,11 @@
 		"logo": "images/devylogo3.20.23.png"
 }</script>
 <script type="module">
-const handleSubmit = (event) => {
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
   event.preventDefault();
-
-  const myForm = event.target;
-  const formData = new FormData(myForm);
-  
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => {
-      alert("Thank you for your submission");
-      myForm.removeEventListener("submit", handleSubmit);
-    })
-    .catch((error) => alert(error));
-};
-
-document
-  .querySelector("form")
-  .addEventListener("submit", handleSubmit);
-
+  alert('Thank you for your submission!');
+});
 
 </script>
     <meta name="theme-color" content="#6d71e5">
