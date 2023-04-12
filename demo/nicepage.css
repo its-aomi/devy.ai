@@ -41598,20 +41598,15 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-text-2 {
   font-size: 1.5rem;
   background-image: none;
-  width: 208px;
+  width: 209px;
   margin: -41px auto 0;
 }
 
 .u-footer .u-text-3 {
-  font-size: 1.5rem;
   background-image: none;
-  margin: -28px 148px 0 784px;
-}
-
-.u-footer .u-text-4 {
-  width: 208px;
   font-size: 1.25rem;
-  margin: 18px auto 0;
+  width: 208px;
+  margin: 12px auto 0;
 }
 
 .u-footer .u-btn-1 {
@@ -41619,33 +41614,12 @@ a.u-link.u-text-hover-grey-90:hover {
   padding: 0;
 }
 
-.u-footer .u-text-5 {
-  background-image: none;
-  font-size: 1.25rem;
-  margin: -32px 149px 0 784px;
-}
-
-.u-footer .u-btn-2 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-footer .u-text-6 {
-  font-size: 1.25rem;
-  margin: 7px 149px 0 784px;
-}
-
-.u-footer .u-text-7 {
-  font-size: 1.25rem;
-  margin: 7px 148px 0 784px;
-}
-
 .u-footer .u-line-1 {
   width: 912px;
-  margin: 39px auto 0;
+  margin: 91px auto 0;
 }
 
-.u-footer .u-text-8 {
+.u-footer .u-text-4 {
   margin: 24px -114px 36px 114px;
 }
 @media (max-width: 1199px) {
@@ -41660,39 +41634,20 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-footer .u-text-2 {
     margin-top: -41px;
-    width: 208px;
+    width: 209px;
   }
 
   .u-footer .u-text-3 {
-    margin-top: -28px;
-    margin-right: 48px;
-    margin-left: 684px;
-  }
-
-  .u-footer .u-text-4 {
     width: 208px;
-  }
-
-  .u-footer .u-text-5 {
-    margin-right: 49px;
-    margin-left: 684px;
-  }
-
-  .u-footer .u-text-6 {
-    margin-right: 49px;
-    margin-left: 684px;
-  }
-
-  .u-footer .u-text-7 {
-    margin-right: 48px;
-    margin-left: 684px;
+    margin-top: 12px;
   }
 
   .u-footer .u-line-1 {
     width: 912px;
+    margin-top: 91px;
   }
 
-  .u-footer .u-text-8 {
+  .u-footer .u-text-4 {
     width: auto;
     margin-right: 638px;
     margin-bottom: 60px;
@@ -41712,52 +41667,26 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-footer .u-text-2 {
     width: auto;
-    margin-right: 216px;
-    margin-left: 296px;
+    margin-top: -34px;
+    margin-right: 209px;
+    margin-left: 303px;
   }
 
   .u-footer .u-text-3 {
     width: auto;
-    margin-top: -29px;
-    margin-right: -28px;
-    margin-left: 540px;
-  }
-
-  .u-footer .u-text-4 {
-    width: auto;
     margin-top: 17px;
-    margin-right: 216px;
-    margin-left: 296px;
-  }
-
-  .u-footer .u-text-5 {
-    width: auto;
-    margin-right: -27px;
-    margin-left: 541px;
-  }
-
-  .u-footer .u-text-6 {
-    width: auto;
-    margin-top: 3px;
-    margin-right: -27px;
-    margin-left: 540px;
-  }
-
-  .u-footer .u-text-7 {
-    width: auto;
-    margin-top: 2px;
-    margin-right: -27px;
-    margin-left: 541px;
+    margin-right: 210px;
+    margin-left: 303px;
   }
 
   .u-footer .u-line-1 {
-    margin-top: 36px;
+    margin-top: 67px;
     margin-right: initial;
     margin-left: initial;
     width: auto;
   }
 
-  .u-footer .u-text-8 {
+  .u-footer .u-text-4 {
     width: 239px;
     margin: 17px auto 16px;
   }
@@ -41774,49 +41703,25 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-text-2 {
-    margin-top: 52px;
-    margin-right: 332px;
+    margin-top: 38px;
+    margin-right: 422px;
     margin-left: 0;
   }
 
   .u-footer .u-text-3 {
-    margin-top: -29px;
-    margin-right: 141px;
-    margin-left: 281px;
-  }
-
-  .u-footer .u-text-4 {
-    margin-top: 22px;
-    margin-right: 332px;
+    margin-top: 12px;
+    margin-right: 424px;
     margin-left: 0;
   }
 
-  .u-footer .u-text-5 {
-    margin-top: -43px;
-    margin-right: 141px;
-    margin-left: 283px;
-  }
-
-  .u-footer .u-text-6 {
-    margin-top: 5px;
-    margin-right: 95px;
-    margin-left: 283px;
-  }
-
-  .u-footer .u-text-7 {
-    margin-top: 5px;
-    margin-right: 112px;
-    margin-left: 283px;
-  }
-
   .u-footer .u-line-1 {
-    margin-top: 38px;
+    margin-top: 93px;
     width: auto;
     margin-right: initial;
     margin-left: initial;
   }
 
-  .u-footer .u-text-8 {
+  .u-footer .u-text-4 {
     width: 239px;
     margin-top: 31px;
     margin-bottom: 60px;
@@ -41834,49 +41739,24 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-footer .u-text-2 {
     font-size: 1rem;
-    margin-right: 132px;
+    margin-top: 27px;
+    margin-right: 222px;
   }
 
   .u-footer .u-text-3 {
     font-size: 1rem;
-    margin-top: -19px;
-    margin-right: 31px;
-    margin-left: 191px;
-  }
-
-  .u-footer .u-text-4 {
-    font-size: 1rem;
-    margin-top: 12px;
-    margin-right: 132px;
-  }
-
-  .u-footer .u-text-5 {
-    font-size: 1rem;
-    margin-top: -25px;
-    margin-right: 33px;
-    margin-left: 191px;
-  }
-
-  .u-footer .u-text-6 {
-    font-size: 1rem;
-    margin-right: -8px;
-    margin-left: 191px;
-  }
-
-  .u-footer .u-text-7 {
-    font-size: 1rem;
-    margin-right: 4px;
-    margin-left: 191px;
+    margin-top: 11px;
+    margin-right: 224px;
   }
 
   .u-footer .u-line-1 {
-    margin-top: 58px;
+    margin-top: 105px;
     width: auto;
     margin-right: initial;
     margin-left: initial;
   }
 
-  .u-footer .u-text-8 {
+  .u-footer .u-text-4 {
     margin-top: 27px;
     margin-bottom: 27px;
   }
