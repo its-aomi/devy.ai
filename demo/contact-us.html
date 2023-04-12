@@ -21,14 +21,6 @@
 		"name": "Site1",
 		"logo": "images/devylogo3.20.23.png"
 }</script>
-<script type="module">
-const form = document.querySelector('form');
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  alert('Message Sent!');
-});
-
-</script>
     <meta name="theme-color" content="#6d71e5">
     <meta property="og:title" content="contact us">
     <meta property="og:type" content="website">
@@ -70,7 +62,6 @@ form.addEventListener('submit', (event) => {
         <h2 class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-text u-text-default u-text-1">Need Help?</h2>
         <div class="u-clearfix u-custom-html u-custom-html-1">
           <form method="POST" data-netlify="true" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" name="form" style="padding: 10px;">
-            <input type="hidden" name="subject" value="Support Message from Devy.ai">
             <div class="u-form-group u-form-group-1 u-form-name u-form-partition-factor-2">
               <label for="name-1f2d" class="u-label">First Name</label>
               <input type="text" placeholder="Enter your First Name" id="name-1f2d" name="name" class="u-input u-input-rectangle" required="">
@@ -110,16 +101,12 @@ form.addEventListener('submit', (event) => {
         <div class="u-border-3 u-border-grey-dark-1 u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-line u-line-horizontal u-line-1"></div>
         <p class="u-align-left u-large-text u-text u-text-variant u-text-4">Copyright © 2023 Devy.ai</p>
       </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
-    </section>
-  
+  <script type="module">
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  alert('Message Sent!');
+});
+
+</script>
 </body></html>
