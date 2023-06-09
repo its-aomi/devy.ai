@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html style="font-size: 16px" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Contact Us" />
+    <meta name="description" content="" />
+    <title>Map</title>
+    <link rel="stylesheet" href="style.css" media="screen" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link href="geocadder-map/jquery-ui.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
+    <!-- <link href="geocadder-map/style.css" rel="stylesheet" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <!-- Turf.js plugin -->
+    <!-- <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script> -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js"></script>
+
+    <link rel="stylesheet" href="map.css" media="screen" />
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="style.js"
+      defer=""
+    ></script>
+
+    <link
+      id="u-theme-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+    />
+    <link
+      id="u-page-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Site1",
+        "logo": "images/devylogo3.20.23.png"
+      }
+    </script>
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="map" />
+    <meta property="og:type" content="website" />
+    <meta data-intl-tel-input-cdn-path="intlTelInput/" />
+  </head>
+  <body class="u-body u-stick-footer u-xl-mode" data-lang="en">
+    <section class="u-clearfix u-section-1" id="sec-487e">
+      <div class="u-clearfix u-sheet u-sheet-1">
+
+
+        <div id="sidebar"></div>
+        <div id="sidebar-popup"></div>
+    
+        <!-- <button class='button-toggle-legend'><img src="icons/toggle-legend.svg"></button>
+    
+      <button class='button-toggle-filter'><img src="icons/toggle-filter.svg"></button> -->
+    
+        <div class="toggle-legend-box">
+          <div>
+            <div class="welcome-content">
+              <span class="welcome-close-button">X</span>
+              <div class="sidebar-content-inner">
+                <h1 class="welcome-popup">Legend</h1>
+              </div>
+            </div>
+    
+            <div id="legend-items">
+              <div>
+                <span>Proposed</span
+                ><img class="legend-image" src="geocadder-map/icons/proposed.png" />
+              </div>
+              <div>
+                <span>Under Construction</span
+                ><img class="legend-image" src="geocadder-map/icons/under-construction.png" />
+              </div>
+              <div>
+                <span>Completed</span
+                ><img class="legend-image" src="geocadder-map/icons/completed.png" />
+              </div>  
+            </div>
+          </div>
+        </div>
+    
+        <div class="toggle-filter-box">
+          <div>
+            <div class="welcome-content">
+              <span class="welcome-close-button">X</span>
+              <div class="sidebar-content-inner">
+                <h1 class="welcome-popup">Filter</h1>
+              </div>
+            </div>
+    
+            <fieldset id="filter-by-property-type">
+              <div id="list1" class="dropdown-check-list" tabindex="100">
+                <span class="anchor">Property Type</span>
+                <ul class="items">
+                  <li>
+                    <input
+                      name="filter-by-property-type-input"
+                      id="build-to-rent"
+                      type="checkbox"
+                      value="build-to-rent"
+                      checked
+                    /><label for="build-to-rent">Build to Rent</label
+                    >
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-property-type-input"
+                      id="industrial"
+                      type="checkbox"
+                      value="industrial"
+                      checked
+                    /><label for="industrial">Industrial</label
+                    >
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-property-type-input"
+                      id="medical"
+                      type="checkbox"
+                      value="medical"
+                      checked
+                    /><label for="medical">Medical</label
+                    >
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-property-type-input"
+                      id="mixed-use"
+                      type="checkbox"
+                      value="mixed-use"
+                      checked
+                    /><label for="mixed-use">Mixed Use</label
+                    >
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-property-type-input"
+                      id="multifamily"
+                      type="checkbox"
+                      value="multifamily"
+                      checked
+                    /><label for="multifamily">Multifamily</label
+                    >
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-property-type-input"
+                      id="retail"
+                      type="checkbox"
+                      value="retail"
+                      checked
+                    /><label for="retail">Retail</label
+                    >
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-property-type-input"
+                      id="single-family"
+                      type="checkbox"
+                      value="single-family"
+                      checked
+                    /><label for="single-family">Single Family</label
+                    >
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+    
+            <fieldset id="filter-by-development-stage">
+              <div id="list2" class="dropdown-check-list" tabindex="100">
+                <span class="anchor">Development Stage</span>
+                <ul class="items">
+                  <li>
+                    <input
+                      name="filter-by-development-stage-input"
+                      id="proposed"
+                      type="checkbox"
+                      value="proposed"
+                      checked
+                    /><label for="proposed">Proposed</label><img class="legend-image" src="geocadder-map/icons/proposed.png" />
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-development-stage-input"
+                      id="under-construction"
+                      type="checkbox"
+                      value="under-construction"
+                      checked
+                    /><label for="under-construction">Under Construction</label><img class="legend-image" src="geocadder-map/icons/under-construction.png" />
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-development-stage-input"
+                      id="completed"
+                      type="checkbox"
+                      value="completed"
+                      checked
+                    /><label for="completed">Completed</label><img class="legend-image" src="geocadder-map/icons/completed.png" />
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+    
+            <fieldset id="filter-by-estimated-completion">
+              <div id="list3" class="dropdown-check-list" tabindex="300">
+                <span class="anchor">Estimated Completion</span>
+                <ul class="items">
+                  <li>
+                    <input
+                      name="filter-by-estimated-completion-input"
+                      id="2023"
+                      type="checkbox"
+                      value="2023"
+                      checked
+                    /><label for="2023">2023</label>
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-estimated-completion-input"
+                      id="2024"
+                      type="checkbox"
+                      value="2024"
+                      checked
+                    /><label for="2024">2024</label>
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-estimated-completion-input"
+                      id="2025"
+                      type="checkbox"
+                      value="2025"
+                      checked
+                    /><label for="2025">2025</label>
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-estimated-completion-input"
+                      id="2026"
+                      type="checkbox"
+                      value="2026"
+                      checked
+                    /><label for="2026">2026</label>
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-estimated-completion-input"
+                      id="2027"
+                      type="checkbox"
+                      value="2027"
+                      checked
+                    /><label for="2027">2027</label>
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-estimated-completion-input"
+                      id="2028"
+                      type="checkbox"
+                      value="2028"
+                      checked
+                    /><label for="2028">2028</label>
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-estimated-completion-input"
+                      id="2029"
+                      type="checkbox"
+                      value="2029"
+                      checked
+                    /><label for="2029">2029</label>
+                  </li>
+                  <li>
+                    <input
+                      name="filter-by-estimated-completion-input"
+                      id="2030"
+                      type="checkbox"
+                      value="2030"
+                      checked
+                    /><label for="2030">2030</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+    
+        <div id="map"></div>
+
+
+      </div>
+    </section>
+    <script src="geocadder-map/script.js"></script>
+  </body>
+</html>
